@@ -1,0 +1,35 @@
+# .NET
+bin/
+obj/
+*.csproj.user
+*.user
+*.suo
+*.sln.docstates
+packages/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa]ppData/
+[bB]in/
+[Oo]bj/
+[Tt]est[Rr]esult*/
+[Ll]ogs/
+[Ll]og/
+*.cache
+*.dll
+*.pdb
+*.exe
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Frontend
+uploads/
+*.log
+.DS_Store
