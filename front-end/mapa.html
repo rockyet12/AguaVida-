@@ -1,0 +1,24 @@
+<!-- mapa.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AguaViva - Mapa en vivo</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/mapa.css">
+</head>
+<body>
+  <div id="map"></div>
+  <div class="leyenda">
+    <span><img src="assets/icons/fuga.png" width="20"> Fuga</span>
+    <span><img src="assets/icons/fuente.png" width="20"> Fuente pública</span>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/mapa.js"></script>
+</body>
+</html>
