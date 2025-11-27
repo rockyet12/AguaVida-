@@ -1,0 +1,26 @@
+{
+  "name": "agua-vida",
+  "version": "1.0.0",
+  "description": "Sistema de reporte de calidad de agua en tiempo real",
+  "main": "backend-node/server.js",
+  "scripts": {
+    "start": "cd backend-node && npm start",
+    "dev": "cd backend-node && npm run dev",
+    "test": "cd backend-node && npm test",
+    "install-all": "npm install && cd backend-node && npm install && cd ../front-end && npm install"
+  },
+  "keywords": [
+    "agua",
+    "reportes",
+    "geolocalización",
+    "mapas",
+    "firebase"
+  ],
+  "author": "Roque",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "type": "module"
+}
