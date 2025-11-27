@@ -1,14 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AguaVida | Iniciar Sesion</title>
+  <title>Agua Vida - Reporta Problemas de Agua</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="/style/global.css">
   <link rel="stylesheet" href="/style/index.css">
 </head>
 <body>
-  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <i class="fas fa-water"></i> <strong>Agua Vida</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#features">Características</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html" class="btn-login">Iniciar Sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html" class="btn-register">Registrarse</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-6 hero-content">
+          <h1 class="hero-title">
+            <span class="gradient-text">Agua Limpia</span> <br>
+            <span class="gradient-text">Comunidad Fuerte</span>
+          </h1>
+          <p class="hero-subtitle">Reporta problemas de agua en tu zona y ayuda a tu comunidad a acceder a agua potable de calidad.</p>
+          <div class="hero-buttons">
+            <a href="register.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-sign-in-alt"></i> Comenzar Ahora
+            </a>
+            <a href="#features" class="btn btn-outline-primary btn-lg">
+              <i class="fas fa-arrow-down"></i> Conocer Más
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-image">
+            <i class="fas fa-water"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>¿Por Qué Elegir Agua Vida?</h2>
+        <p>Herramientas simples y poderosas para mejorar el acceso al agua</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Feature 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon bg-primary">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Ubicación en Mapa</h3>
+            <p>Visualiza todos los reportes de tu zona en un mapa interactivo en tiempo real.</p>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon bg-info">
+              <i class="fas fa-camera"></i>
+            </div>
+            <h3>Adjunta Fotos</h3>
+            <p>Sube imágenes para documentar los problemas y ayudar en la verificación.</p>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon bg-success">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3>Comunidad Activa</h3>
+            <p>Conecta con otros usuarios y compartir información sobre problemas locales.</p>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon bg-warning">
+              <i class="fas fa-bell"></i>
+            </div>
+            <h3>Notificaciones</h3>
+            <p>Recibe actualizaciones sobre el estado de tus reportes.</p>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon bg-danger">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Estadísticas</h3>
+            <p>Visualiza tendencias y patrones de problemas de agua en tu región.</p>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="feature-card">
+            <div class="feature-icon bg-secondary">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Seguridad</h3>
+            <p>Tus datos están protegidos con encriptación de nivel empresarial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats py-5 bg-light">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="stat">
+            <h3 class="stat-number">2,500+</h3>
+            <p class="stat-label">Reportes Activos</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat">
+            <h3 class="stat-number">500+</h3>
+            <p class="stat-label">Usuarios Registrados</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat">
+            <h3 class="stat-number">45+</h3>
+            <p class="stat-label">Municipios</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat">
+            <h3 class="stat-number">98%</h3>
+            <p class="stat-label">Satisfacción</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="about-image">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="about-content">
+            <h2>Sobre Agua Vida</h2>
+            <p>Somos una plataforma dedicada a mejorar el acceso a agua potable en las comunidades. Creemos que mediante la transparencia y la participación ciudadana, podemos generar cambios reales en la distribución y calidad del agua.</p>
+            <ul class="about-list">
+              <li><i class="fas fa-check"></i> Reportes en tiempo real</li>
+              <li><i class="fas fa-check"></i> Seguimiento de casos</li>
+              <li><i class="fas fa-check"></i> Comunidad colaborativa</li>
+              <li><i class="fas fa-check"></i> Impacto social comprobado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta py-5 text-center">
+    <div class="container">
+      <h2>¿Listo para Hacer la Diferencia?</h2>
+      <p>Únete a miles de usuarios que ya están reportando y solucionando problemas de agua</p>
+      <a href="register.html" class="btn btn-primary btn-lg mt-3">
+        <i class="fas fa-user-plus"></i> Registrarse Ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5><i class="fas fa-water"></i> Agua Vida</h5>
+          <p>Plataforma para reportar y mejorar el acceso a agua potable.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces Rápidos</h5>
+          <ul class="footer-links">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="login.html">Iniciar Sesión</a></li>
+            <li><a href="register.html">Registrarse</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Síguenos</h5>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p>&copy; 2025 Agua Vida. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+{
+  "name": "aguaviva-backend",
+  "version": "1.0.0",
+  "description": "Backend para Agua Vida - Node.js + Express + Firebase",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["agua", "vida", "reportes", "mapas"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^12.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}

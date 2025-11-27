@@ -29,6 +29,28 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads (local development)
+front-end/assets/uploads/*
+!front-end/assets/uploads/.gitkeep
+
+# Logs
+*.log
+/tmp/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
 # Frontend
 uploads/
 *.log

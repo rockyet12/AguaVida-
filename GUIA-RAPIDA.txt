@@ -1,0 +1,219 @@
+# 🚀 GUÍA RÁPIDA - AGUA VIDA
+
+## 5 Pasos para Empezar
+
+### 1. Obtén Credenciales Firebase
+```
+1. https://console.firebase.google.com
+2. Nuevo proyecto → "Agua Vida"
+3. Configuración → Cuentas de servicio
+4. Descarga clave privada (JSON)
+```
+
+### 2. Actualiza .env
+```bash
+# /backend-node/.env
+FIREBASE_PROJECT_ID=tu-valor-aqui
+FIREBASE_PRIVATE_KEY=tu-valor-aqui
+FIREBASE_CLIENT_EMAIL=tu-valor-aqui
+```
+
+### 3. Instala Dependencias
+```bash
+cd /home/roque/Agua-Vida/backend-node
+npm install
+
+cd /home/roque/Agua-Vida/front-end
+npm install
+```
+
+### 4. Inicia Todo
+```bash
+cd /home/roque/Agua-Vida
+bash start.sh
+```
+
+### 5. Abre en Navegador
+```
+http://localhost:3000
+```
+
+---
+
+## URLs Importantes
+
+| Página | URL |
+|---|---|
+| 🏠 Inicio | http://localhost:3000 |
+| 📝 Registro | http://localhost:3000/register.html |
+| 🔐 Login | http://localhost:3000/login.html |
+| 📝 Reportar | http://localhost:3000/reportar.html |
+| 🗺️ Mapa | http://localhost:3000/mapa.html |
+| 👤 Perfil | http://localhost:3000/perfil.html |
+
+---
+
+## Archivos de Configuración
+
+| Archivo | Qué es |
+|---|---|
+| `.env` | Credenciales Firebase |
+| `server.js` | Backend Express |
+| `auth.js` | Login/Registro |
+| `reportar.js` | Formulario reportes |
+| `global.css` | Estilos base |
+
+---
+
+## Comandos Útiles
+
+```bash
+# Verificar todo
+bash verify.sh
+
+# Iniciar backend solo
+cd backend-node && npm start
+
+# Iniciar frontend solo
+cd front-end && npm start
+
+# Ver si backend funciona
+curl http://localhost:5000/api/health
+
+# Ver logs completos
+npm start  # (no en background)
+```
+
+---
+
+## Crear Reporte
+
+1. Regístrate en `/register.html`
+2. Inicia sesión en `/login.html`
+3. Ve a `/reportar.html`
+4. Completa 4 pasos:
+   - Información (título, tipo, descripción, gravedad)
+   - Ubicación (mapa)
+   - Fotos (opcional)
+   - Resumen (confirmar)
+5. ¡Enviado! Verás en `/mapa.html`
+
+---
+
+## Validaciones
+
+| Campo | Regla |
+|---|---|
+| Nombre | Min 3 caracteres |
+| Email | Formato válido |
+| Contraseña | Min 8 caracteres |
+| Título reporte | Min 5 caracteres |
+| Descripción | Min 20 caracteres |
+| Fotos | Max 5MB, solo imágenes |
+
+---
+
+## Colores (Gravedad)
+
+- 🔴 Crítico (Rojo)
+- 🟠 Medio (Naranja)
+- 🔵 Leve (Azul)
+
+---
+
+## Errores Comunes
+
+| Error | Solución |
+|---|---|
+| "Backend no activo" | Inicia backend en otra terminal |
+| "Usuario incorrecto" | Revisa .env está completo |
+| "Fotos no suben" | Backend debe estar activo |
+| "Formulario no responde" | Abre F12, revisa Console |
+
+---
+
+## Archivos Importantes
+
+```
+/backend-node/
+  ├── server.js (MAIN)
+  ├── .env (COMPLETAR)
+  └── package.json
+
+/front-end/
+  ├── index.html
+  ├── register.html
+  ├── login.html
+  ├── reportar.html
+  ├── mapa.html
+  ├── js/
+  │   ├── auth.js (MAIN)
+  │   └── reportar.js (MAIN)
+  └── style/
+      └── global.css
+```
+
+---
+
+## Documentación Completa
+
+- `RESUMEN-FINAL.md` - Este archivo
+- `INSTRUCCIONES-FUNCIONAL.md` - Guía detallada
+- `README-FUNCIONAL.md` - Descripción técnica
+
+---
+
+## API Endpoints
+
+```
+GET    /api/health                 ← Verificar servidor
+POST   /api/auth/register          ← Crear cuenta
+POST   /api/auth/login             ← Iniciar sesión
+GET    /api/reportes               ← Ver todos
+POST   /api/reportes               ← Crear reporte
+GET    /api/reportes/:id           ← Ver uno
+PUT    /api/reportes/:id           ← Editar
+DELETE /api/reportes/:id           ← Eliminar
+GET    /api/usuarios/:uid          ← Ver perfil
+PUT    /api/usuarios/:uid          ← Editar perfil
+```
+
+---
+
+## Puertos
+
+- Frontend: **3000**
+- Backend: **5000**
+
+---
+
+## Stack Tecnológico
+
+**Frontend:**
+- HTML5, CSS3, JavaScript
+- Bootstrap 5.3.3
+- Leaflet 1.9.4 (mapas)
+- Font Awesome 6.4.0
+
+**Backend:**
+- Node.js + Express.js
+- Firebase (Auth + Firestore)
+- Multer (archivos)
+- CORS habilitado
+
+---
+
+## Próximos Pasos
+
+1. ✅ Completa el .env
+2. ✅ Instala dependencias
+3. ✅ Inicia servidores
+4. ✅ Prueba login/registro
+5. ✅ Crea un reporte
+6. ✅ Verifica en mapa
+
+---
+
+**¡Listo para usar! 🎉**
+
+Cualquier problema: revisa los logs en la consola
